@@ -3,15 +3,16 @@
 <html lang="en">
 <head>
     <title>Minguinho's schedule</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/poll.css' %}">
 </head>
 <body>
 <div>
-    <h1><a href="/admin">Django Girls Blog</a></h1>
+    <h1><a href="/admin">Minguinho's Schedule</a></h1>
 </div>
 
+<div>
+    <h2><a href="/admin/poll/post">Post List</a> </h2>
+</div>
 {% for post in posts %}
 <div>
     <p>published: {{ post.published_date }}</p>
